@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Cron</string>
+    <string name="channel_name">cronjob channel</string>
+    <string name="channel_description">cronjob\'s channel</string>
+    <string name="add_button">add</string>
+    <string name="new_job_button">new job</string>
+    <string name="delete_button">delete job</string>
+    <string name="save_changes_button">Save changes</string>
+    <string name="job_interval_default_input">15 (min. 15 minute)</string>
+    <string name="job_url_default_input">https://huishun98.github.io</string>
+    <string name="job_name_default_input">Ping website</string>
+    <string name="job_name_prompt">Job name:</string>
+    <string name="job_url_prompt">Job url:</string>
+    <string name="job_interval_prompt">Time interval:</string>
+    <string name="add_new_job_prompt">Click on the + button to add a new cron job</string>
+    <string name="request_method_prompt">Request method:</string>
+    <string name="job_params_prompt">Enter json payload here (if any)</string>
+    <string name="job_time_unit_prompt">Time unit:</string>
+    <string name="notification_settings">Notification settings</string>
+    <string name="on_error_prompt">Notify on error</string>
+    <string name="on_success_prompt">Notify on success</string>
+    <string name="job_settings">Job settings</string>
+    <string name="download_button">Download latest result</string>
+    <string name="cron_channel_id">cron_channel_id</string>
+    <string name="next_run_at_prompt">Next run at approx.</string>
+    <string name="job_interval_prompt2">Every</string>
+</resources>
