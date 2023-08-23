@@ -4,8 +4,8 @@
     <string name="channel_description">cronjob\'s channel</string>
     <string name="add_button">add</string>
     <string name="new_job_button">new job</string>
-    <string name="delete_button">delete job</string>
-    <string name="save_changes_button">Save changes</string>
+    <string name="delete_button">delete</string>
+    <string name="save_changes_button">Save</string>
     <string name="job_interval_default_input">15 (min. 15 minute)</string>
     <string name="job_url_default_input">https://huishun98.github.io</string>
     <string name="job_name_default_input">Ping website</string>
@@ -13,7 +13,7 @@
     <string name="job_url_prompt">Job url:</string>
     <string name="job_interval_prompt">Time interval:</string>
     <string name="add_new_job_prompt">Click on the + button to add a new cron job</string>
-    <string name="request_method_prompt">Request method:</string>
+    <string name="request_method_prompt">Request method</string>
     <string name="job_params_prompt">Enter json payload here (if any)</string>
     <string name="job_time_unit_prompt">Time unit:</string>
     <string name="notification_settings">Notification settings</string>

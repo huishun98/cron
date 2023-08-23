@@ -4,6 +4,10 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+import android.util.Log;
+
+import com.huishun.cronjobs.utils.ScheduleUtils;
+
 /**
  * Example local unit test, which will execute on the development machine (host).
  *
@@ -13,5 +17,11 @@ public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
+    }
+
+    @Test
+    public void cron_isCorrect() {
+        var test = ScheduleUtils.calcNextRunCron("* * * * *");
+        assertNotNull(test);
     }
 }

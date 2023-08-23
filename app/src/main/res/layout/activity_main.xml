@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
         <include
@@ -12,24 +12,40 @@
 
         <TextView
             android:id="@+id/add_new_job_prompt"
+            android:layout_below="@id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="top|center_horizontal"
             android:layout_marginTop="32dp"
-            android:text="@string/add_new_job_prompt"
-            />
+            android:text="@string/add_new_job_prompt" />
 
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/swipe_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar">
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/jobs_recyclerview"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="8dp"
-                    />
+                    android:clipToPadding="false"
+                    android:paddingBottom="100dp"/>
+
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-</LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:contentDescription="Add"
+            android:focusable="true"
+            app:backgroundTint="@color/blue_100"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/ic_baseline_add_24"
+            app:tint="@color/blue_700" />
+
+</RelativeLayout>
