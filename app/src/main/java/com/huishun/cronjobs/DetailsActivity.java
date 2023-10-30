@@ -34,7 +34,7 @@ import android.widget.Toast;
 import com.huishun.cronjobs.database.JobsBase;
 import com.huishun.cronjobs.models.JobModel;
 import com.huishun.cronjobs.worker.AlarmReceiver;
-import com.huishun.cronjobs.worker.ApiWorker;
+//import com.huishun.cronjobs.worker.ApiWorker;
 
 import org.json.JSONException;
 import org.json.JSONObject;
